@@ -1,3 +1,4 @@
+// config/swagger.js
 const swaggerJsdoc = require('swagger-jsdoc');
 
 const options = {
@@ -14,11 +15,10 @@ const options = {
         },
         servers: [
             {
-                url: '/api',
-                description: 'API Server'
+                url: 'http://localhost:1433/api',
+                description: 'Development Server'
             }
         ],
-        defaultContentType: 'application/json; charset=utf-8',
         components: {
             securitySchemes: {
                 bearerAuth: {
@@ -29,9 +29,7 @@ const options = {
             }
         }
     },
-    apis: ['./routes/*.js', './controllers/*.js'], // Paths to files containing OpenAPI annotations
+    apis: ['./routes/*.js', './controllers/*.js']
 };
 
-const specs = swaggerJsdoc(options);
-
-module.exports = specs;
+module.exports = swaggerJsdoc(options);
