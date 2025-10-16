@@ -25,8 +25,10 @@ app.get('/', (req, res) => {
 });
 
 // Swagger Documentation
-app.use('/api-docs', swaggerUi.serve);
-app.get('/api-docs', swaggerUi.setup(swaggerSpecs, { explorer: true }));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
+    explorer: true,
+    customSiteTitle: "Nexum Supply Chain API Documentation"
+}));
 
 // Routes with API prefix
 app.use('/api/auth', userRoutes);
