@@ -18,6 +18,7 @@ const options = {
                 description: 'API Server'
             }
         ],
+        defaultContentType: 'application/json; charset=utf-8',
         components: {
             securitySchemes: {
                 bearerAuth: {

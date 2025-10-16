@@ -9,12 +9,14 @@ const productRoutes = require('./routes/products');
 
 const app = express();
 
-// Configuração do CORS
-app.use(cors({
-    origin: '*',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// Configuração do CORS e Headers
+app.use(cors());
+app.use((req, res, next) => {
+    res.setHeader('Content-Type', 'application/json; charset=utf-8');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Accept', '*/*');
+    next();
+});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -25,14 +27,14 @@ app.get('/', (req, res) => {
 });
 
 // Swagger Documentation
-app.use('/api-docs', swaggerUi.serve);
-app.get('/api-docs', (req, res) => {
-    return res.send(
-        swaggerUi.generateHTML(swaggerDocument, {
-            customSiteTitle: "Nexum Supply Chain API Documentation"
-        })
-    );
-});
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
+    customSiteTitle: "Nexum Supply Chain API Documentation",
+    swaggerOptions: {
+        displayRequestDuration: true,
+        docExpansion: 'none',
+        filter: true
+    }
+}));
 
 // Routes with API prefix
 app.use('/api/auth', userRoutes);

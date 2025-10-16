@@ -8,8 +8,15 @@
     ],
     "routes": [
         {
-            "src": "/api-docs(.*)",
-            "dest": "app.js"
+            "src": "/api-docs/(.*)",
+            "dest": "app.js",
+            "headers": {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept",
+                "Content-Security-Policy": "default-src 'self' 'unsafe-inline'; img-src 'self' data:; style-src 'self' 'unsafe-inline';",
+                "X-Content-Type-Options": "nosniff"
+            }
         },
         {
             "src": "/api/(.*)",
