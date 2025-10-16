@@ -5,7 +5,14 @@ const UserRepository = require('../repositories/UserRepository');
 class AuthService {
     async authenticate(email, senha) {
         try {
+            console.log('Tentando autenticar usuário:', { email });
+            
             const user = await UserRepository.findByEmail(email);
+            console.log('Usuário encontrado:', user ? { 
+                id: user.id, 
+                email: user.email, 
+                hasPassword: !!user.senha 
+            } : 'Nenhum usuário encontrado');
             
             if (!user) {
                 throw new Error('User not found');
