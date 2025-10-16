@@ -11,7 +11,20 @@ const app = express();
 
 // Configuração do CORS e Headers
 app.use(cors());
-app.use((req, res, next) => {
+
+// Configuração do Swagger primeiro
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
+    explorer: true,
+    customSiteTitle: "Nexum Supply Chain API Documentation",
+    swaggerOptions: {
+        displayRequestDuration: true,
+        docExpansion: 'none',
+        filter: true
+    }
+}));
+
+// Middleware para rotas da API
+app.use('/api', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json; charset=utf-8');
     res.setHeader('Cache-Control', 'no-cache');
     res.setHeader('Accept', '*/*');
@@ -26,17 +39,7 @@ app.get('/', (req, res) => {
     res.json({ status: 'API is running' });
 });
 
-// Swagger Documentation
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
-    customSiteTitle: "Nexum Supply Chain API Documentation",
-    swaggerOptions: {
-        displayRequestDuration: true,
-        docExpansion: 'none',
-        filter: true
-    }
-}));
-
-// Routes with API prefix
+// Rotas da API com prefixo
 app.use('/api/auth', userRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
