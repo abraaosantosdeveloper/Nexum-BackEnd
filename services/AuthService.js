@@ -5,27 +5,20 @@ const UserRepository = require('../repositories/UserRepository');
 class AuthService {
     async authenticate(email, senha) {
         try {
-            console.log('Tentando autenticar usuário:', { email });
-            
             const user = await UserRepository.findByEmail(email);
-            console.log('Usuário encontrado:', user ? { 
-                id: user.id, 
-                email: user.email, 
-                hasPassword: !!user.senha 
-            } : 'Nenhum usuário encontrado');
             
             if (!user) {
-                throw new Error('User not found');
+                throw new Error('Usuário não encontrado');
             }
 
             if (!user.senha) {
-                throw new Error('Password hash not found in database');
+                throw new Error('Senha não encontrada no banco de dados');
             }
 
             const isValidPassword = await bcrypt.compare(senha, user.senha);
             
             if (!isValidPassword) {
-                throw new Error('Invalid password');
+                throw new Error('Senha inválida');
             }
 
             const token = jwt.sign(
@@ -35,30 +28,30 @@ class AuthService {
                     nivel_acesso: user.nivel_acesso 
                 },
                 process.env.JWT_SECRET,
-                { expiresIn: process.env.JWT_EXPIRES_IN }
+                { expiresIn: process.env.JWT_EXPIRES_IN || '24h' }
             );
 
-            return { user, token };
+            // Remove password from user object
+            const { senha: _, ...userWithoutPassword } = user;
+
+            return { user: userWithoutPassword, token };
         } catch (error) {
-            console.error('Authentication error:', error);
-            throw new Error('Authentication failed');
+            throw error;
         }
     }
 
-    async verifyToken(token) {
+    verifyToken(token) {
         try {
-            const decoded = jwt.verify(token, process.env.JWT_SECRET);
-            const user = await UserRepository.findById(decoded.id);
-            
-            if (!user) {
-                throw new Error('User not found');
-            }
-
-            return user;
+            return jwt.verify(token, process.env.JWT_SECRET);
         } catch (error) {
-            console.error('Token verification error:', error);
-            throw new Error('Invalid token');
+            throw new Error('Token inválido');
         }
+    }
+
+    generateToken(payload) {
+        return jwt.sign(payload, process.env.JWT_SECRET, {
+            expiresIn: process.env.JWT_EXPIRES_IN || '24h'
+        });
     }
 }
 

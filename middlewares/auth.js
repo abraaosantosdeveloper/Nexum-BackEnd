@@ -1,51 +1,49 @@
-const jwt = require('jsonwebtoken');
-require('dotenv').config();
+const AuthService = require('../services/AuthService');
 
 function authMiddleware(req, res, next) {
     try {
-        // Pegar o token do header Authorization
         const authHeader = req.headers.authorization;
 
         if (!authHeader) {
-            return res.status(401).json({ error: 'No token provided' });
+            return res.status(401).json({ error: 'Token não fornecido' });
         }
 
-        // O token vem no formato "Bearer token"
         const parts = authHeader.split(' ');
 
         if (parts.length !== 2) {
-            return res.status(401).json({ error: 'Token error' });
+            return res.status(401).json({ error: 'Erro no token' });
         }
 
         const [scheme, token] = parts;
 
         if (!/^Bearer$/i.test(scheme)) {
-            return res.status(401).json({ error: 'Token malformatted' });
+            return res.status(401).json({ error: 'Token mal formatado' });
         }
 
-        // Verificar se o token é válido
-        jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
-            if (err) {
-                return res.status(401).json({ error: 'Token invalid' });
-            }
-
-            // Se tudo estiver ok, salva as informações do usuário na requisição
-            req.userId = decoded.id;
-            req.userEmail = decoded.email;
-            req.userNivelAcesso = decoded.nivel_acesso;
-            return next();
-        });
-    } catch (err) {
-        return res.status(401).json({ error: 'Token authentication failed' });
+        const decoded = AuthService.verifyToken(token);
+        
+        req.userId = decoded.id;
+        req.userEmail = decoded.email;
+        req.userNivelAcesso = decoded.nivel_acesso;
+        
+        return next();
+    } catch (error) {
+        return res.status(401).json({ error: 'Token inválido' });
     }
 }
 
-// Middleware para verificar se o usuário é admin
-function isAdmin(req, res, next) {
-    if (req.userNivelAcesso !== 'ADMIN') {
-        return res.status(403).json({ error: 'Access denied: admin only' });
+function isGestor(req, res, next) {
+    if (!['gestor', 'admin'].includes(req.userNivelAcesso)) {
+        return res.status(403).json({ error: 'Acesso negado: apenas gestores' });
     }
     return next();
 }
 
-module.exports = { authMiddleware, isAdmin };
+function isAdmin(req, res, next) {
+    if (req.userNivelAcesso !== 'admin') {
+        return res.status(403).json({ error: 'Acesso negado: apenas administradores' });
+    }
+    return next();
+}
+
+module.exports = { authMiddleware, isGestor, isAdmin };

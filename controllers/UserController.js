@@ -1,69 +1,61 @@
-const AuthService = require('../services/AuthService');
-const UserRepository = require('../repositories/UserRepository');
-const { validationResult } = require('express-validator');
+const UserService = require('../services/UserService');
 
 class UserController {
-    async login(req, res) {
+    async create(req, res) {
         try {
-            console.log('Recebido requisição de login:', { 
-                body: req.body,
-                headers: req.headers
-            });
-
-            const { email, senha } = req.body;
+            console.log('📝 Dados recebidos:', req.body);
+            console.log('📝 Headers:', req.headers['content-type']);
             
-            if (!email || !senha) {
-                return res.status(400).json({ 
-                    error: 'Email e senha são obrigatórios',
-                    received: { hasEmail: !!email, hasSenha: !!senha }
-                });
+            if (!req.body || Object.keys(req.body).length === 0) {
+                return res.status(400).json({ error: 'Corpo da requisição vazio' });
             }
 
-            const { user, token } = await AuthService.authenticate(email, senha);
-            
-            console.log('Login bem-sucedido:', { 
-                userId: user.id,
-                hasToken: !!token
-            });
-
-            return res.json({ user, token });
+            const user = await UserService.createUser(req.body);
+            console.log('✅ Usuário criado com sucesso');
+            return res.status(201).json(user);
         } catch (error) {
-            console.error('Erro no login:', error);
-            return res.status(401).json({ 
-                error: error.message,
-                stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
-            });
+            console.error('❌ Erro ao criar usuário:', error.message);
+            return res.status(400).json({ error: error.message });
         }
     }
 
-    async create(req, res) {
+    async getAll(req, res) {
         try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({ errors: errors.array() });
-            }
-
-            const user = await UserRepository.create(req.body);
-            return res.status(201).json(user);
+            const users = await UserService.getAllUsers();
+            return res.json(users);
         } catch (error) {
-            return res.status(400).json({ error: error.message });
+            console.error('❌ Erro ao listar usuários:', error.message);
+            return res.status(500).json({ error: error.message });
+        }
+    }
+
+    async getById(req, res) {
+        try {
+            const user = await UserService.getUserById(req.params.id);
+            return res.json(user);
+        } catch (error) {
+            console.error('❌ Erro ao buscar usuário:', error.message);
+            return res.status(404).json({ error: error.message });
         }
     }
 
     async update(req, res) {
         try {
-            const errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(400).json({ errors: errors.array() });
-            }
-
-            const user = await UserRepository.update(req.params.id, req.body);
-            if (!user) {
-                return res.status(404).json({ error: 'User not found' });
-            }
+            const user = await UserService.updateUser(req.params.id, req.body);
             return res.json(user);
         } catch (error) {
+            console.error('❌ Erro ao atualizar usuário:', error.message);
             return res.status(400).json({ error: error.message });
+        }
+    }
+
+    async delete(req, res) {
+        try {
+            await UserService.deleteUser(req.params.id);
+            return res.status(204).send();
+        } catch (error) {
+            console.error('❌ Erro ao deletar usuário:', error.message);
+            return res.status(404).json({ error: error.message });
         }
     }
 }

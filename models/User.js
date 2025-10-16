@@ -2,7 +2,7 @@ class User {
     constructor(data) {
         this.id = data.id;
         this.email = data.email;
-        this.senha = data.senha; // Adicionando senha
+        this.senha = data.senha;
         this.matricula = data.matricula;
         this.nivel_acesso = data.nivel_acesso;
         this.data_criacao = data.data_criacao;
@@ -13,6 +13,12 @@ class User {
     toJSON() {
         const { senha, ...user } = this;
         return user;
+    }
+
+    // Validate nivel_acesso
+    static isValidNivelAcesso(nivel) {
+        const validLevels = ['usuario', 'gestor', 'admin'];
+        return validLevels.includes(nivel.toLowerCase());
     }
 }
 
