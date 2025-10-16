@@ -9,16 +9,29 @@ const productRoutes = require('./routes/products');
 
 const app = express();
 
-app.use(cors());
+// Configuração do CORS
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Rota de health check
+app.get('/', (req, res) => {
+    res.json({ status: 'API is running' });
+});
 
 // Swagger Documentation
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, { explorer: true }));
+app.use('/api-docs', swaggerUi.serve);
+app.get('/api-docs', swaggerUi.setup(swaggerSpecs, { explorer: true }));
 
-// Routes
-app.use('/auth', userRoutes);
-app.use('/users', userRoutes);
-app.use('/products', productRoutes);
+// Routes with API prefix
+app.use('/api/auth', userRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/products', productRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

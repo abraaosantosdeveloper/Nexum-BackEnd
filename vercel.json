@@ -8,16 +8,16 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
+            "dest": "app.js"
+        },
+        {
+            "src": "/api-docs",
+            "dest": "app.js"
+        },
+        {
+            "src": "/",
             "dest": "app.js"
         }
-    ],
-    "env": {
-        "DB_SERVER": "@db_server",
-        "DB_DATABASE": "@db_database",
-        "DB_USER": "@db_user",
-        "DB_PASSWORD": "@db_password",
-        "JWT_SECRET": "@jwt_secret",
-        "JWT_EXPIRES_IN": "@jwt_expires_in"
-    }
+    ]
 }
