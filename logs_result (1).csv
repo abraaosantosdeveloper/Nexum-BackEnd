@@ -1,0 +1,390 @@
+"TimeUTC","timestampInMs","requestPath","requestMethod","requestQueryString","responseStatusCode","requestId","requestUserAgent","level","environment","branch","vercelCache","type","function","host","deploymentDomain","deploymentId","durationMs","region","maxMemoryUsed","memorySize","message","projectId","traceId","sessionId","invocationId","instanceId","concurrency"
+"2025-10-16 02:49:26",1760582966563,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.png","GET","",-1,"hnfgc-1760582965726-e268325caf4b","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER6G933SYTZSMAFJFQ2JF","",-1
+"2025-10-16 02:49:25",1760582965769,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.png","GET","",500,"hnfgc-1760582965726-e268325caf4b","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",780,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER6G933SYTZSMAFJFQ2JF","",1
+"2025-10-16 02:49:23",1760582963589,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.png","GET","",-1,"c2l4b-1760582962735-106869e4cff8","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER3JWY8V859XZ42JFFXPP","",-1
+"2025-10-16 02:49:22",1760582962780,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.png","GET","",500,"c2l4b-1760582962735-106869e4cff8","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",794,"iad1",128,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER3JWY8V859XZ42JFFXPP","",1
+"2025-10-16 02:49:21",1760582961670,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.png","GET","",-1,"bg4hs-1760582960815-e7b856d76123","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER1PSQ8B8XZWHSHWPVB30","",-1
+"2025-10-16 02:49:20",1760582960857,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.png","GET","",500,"bg4hs-1760582960815-e7b856d76123","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",794,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER1PSQ8B8XZWHSHWPVB30","",1
+"2025-10-16 02:49:20",1760582960762,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",-1,"dtdpt-1760582959908-e039ad7d6f6e","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER0TEN0SCS8PC1B8C2CRR","",-1
+"2025-10-16 02:49:19",1760582959950,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",500,"dtdpt-1760582959908-e039ad7d6f6e","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",796,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NER0TEN0SCS8PC1B8C2CRR","",1
+"2025-10-16 02:49:17",1760582957763,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",-1,"whjxg-1760582956911-6dbb2546272e","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQXWQAQ73NAZP42DY78VN","",-1
+"2025-10-16 02:49:16",1760582956951,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",500,"whjxg-1760582956911-6dbb2546272e","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",798,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQXWQAQ73NAZP42DY78VN","",1
+"2025-10-16 02:49:15",1760582955783,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",-1,"nc62n-1760582954916-41feee0cbf82","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQVYFV8264VVWPXSFH2DP","",-1
+"2025-10-16 02:49:14",1760582954959,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",500,"nc62n-1760582954916-41feee0cbf82","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",803,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQVYFV8264VVWPXSFH2DP","",1
+"2025-10-16 02:49:14",1760582954768,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",-1,"n4x6k-1760582953811-2905979281fa","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQTZ5BDB4K26KPDGX0Y7C","",-1
+"2025-10-16 02:49:13",1760582953957,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",500,"n4x6k-1760582953811-2905979281fa","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",796,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQTZ5BDB4K26KPDGX0Y7C","",1
+"2025-10-16 02:49:12",1760582952633,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",-1,"jgt4t-1760582951751-97dae45a8e79","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQRVRQZ89VHKVH9F0XWDH","",-1
+"2025-10-16 02:49:11",1760582951800,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",500,"jgt4t-1760582951751-97dae45a8e79","vercel-favicon/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",816,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQRVRQZ89VHKVH9F0XWDH","",1
+"2025-10-16 02:48:49",1760582929640,"nexum-back-end.vercel.app/","GET","",-1,"zn8f5-1760582928774-38f2c2c096b2","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-end.vercel.app","nexum-back-end.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQ2EAKXYSEFSE9KMJ0C98","",-1
+"2025-10-16 02:48:48",1760582928842,"nexum-back-end.vercel.app/","GET","",500,"zn8f5-1760582928774-38f2c2c096b2","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-end.vercel.app","nexum-back-end.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",782,"iad1",128,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEQ2EAKXYSEFSE9KMJ0C98","",1
+"2025-10-16 02:48:46",1760582926793,"nexum-back-end.vercel.app/favicon.ico","GET","",-1,"h6ngb-1760582925758-6ea8342494bd","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0","error","production","","","lambda","/app.js","nexum-back-end.vercel.app","nexum-back-end.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPZN1A9ZT899W59P77DBB","",-1
+"2025-10-16 02:48:45",1760582925985,"nexum-back-end.vercel.app/favicon.ico","GET","",500,"h6ngb-1760582925758-6ea8342494bd","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0","error","production","","","lambda","/app.js","nexum-back-end.vercel.app","nexum-back-end.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",791,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPZN1A9ZT899W59P77DBB","",1
+"2025-10-16 02:48:45",1760582925397,"nexum-back-end.vercel.app/api-docs/","GET","",-1,"sphsf-1760582924523-ce5c1dac509c","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0","error","production","","","lambda","/app.js","nexum-back-end.vercel.app","nexum-back-end.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPY9F3FKPSS2A8KPCJG5X","",-1
+"2025-10-16 02:48:44",1760582924591,"nexum-back-end.vercel.app/api-docs/","GET","",500,"sphsf-1760582924523-ce5c1dac509c","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0","error","production","","","lambda","/app.js","nexum-back-end.vercel.app","nexum-back-end.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",790,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPY9F3FKPSS2A8KPCJG5X","",1
+"2025-10-16 02:48:42",1760582922561,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",-1,"nm5vr-1760582921544-70b2c81949e3","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPVGMHY5NVJPN7ZWG35PD","",-1
+"2025-10-16 02:48:41",1760582921748,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",500,"nm5vr-1760582921544-70b2c81949e3","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",799,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPVGMHY5NVJPN7ZWG35PD","",1
+"2025-10-16 02:48:38",1760582918344,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/api-docs","GET","",-1,"7tfr4-1760582917439-4e01a7f57852","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPQC3N3ADWNNACN5J7EQ3","",-1
+"2025-10-16 02:48:37",1760582917507,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/api-docs","GET","",500,"7tfr4-1760582917439-4e01a7f57852","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",806,"iad1",128,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPQC3N3ADWNNACN5J7EQ3","",1
+"2025-10-16 02:48:37",1760582917043,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",-1,"cggvr-1760582916176-00de8157f296","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPP4GRAWG3YQHE8KDRRPN","",-1
+"2025-10-16 02:48:36",1760582916240,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",500,"cggvr-1760582916176-00de8157f296","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",786,"iad1",128,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPP4GRAWG3YQHE8KDRRPN","",1
+"2025-10-16 02:48:35",1760582915845,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",-1,"djgbf-1760582914689-3abaf702b412","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPMZ0KCX8BG8S87K0X0XT","",-1
+"2025-10-16 02:48:35",1760582915040,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",500,"djgbf-1760582914689-3abaf702b412","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",791,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPMZ0KCX8BG8S87K0X0XT","",1
+"2025-10-16 02:48:31",1760582911919,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",-1,"zr678-1760582910938-287f8a2a045b","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPH4F60JS1NYJEJQ91M7J","",-1
+"2025-10-16 02:48:31",1760582911833,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",-1,"pkkjw-1760582910960-dc8293148f88","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPH3X9J9KE2YRN71148PC","",-1
+"2025-10-16 02:48:31",1760582911119,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",500,"zr678-1760582910938-287f8a2a045b","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",784,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPH4F60JS1NYJEJQ91M7J","",1
+"2025-10-16 02:48:31",1760582911101,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/favicon.ico","GET","",500,"pkkjw-1760582910960-dc8293148f88","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",708,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPH3X9J9KE2YRN71148PC","",1
+"2025-10-16 02:48:30",1760582910869,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",-1,"6wf6b-1760582910079-ae38594eeff8","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPG5917WZ9QFF7HW4PAK0","",-1
+"2025-10-16 02:48:30",1760582910822,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",-1,"6b889-1760582909905-17cd70f829a9","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPG0577Y7M38BXZC0TGVA","",-1
+"2025-10-16 02:48:30",1760582910121,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",500,"6wf6b-1760582910079-ae38594eeff8","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",728,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPG5917WZ9QFF7HW4PAK0","",1
+"2025-10-16 02:48:29",1760582909968,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",-1,"z4hp7-1760582907831-57ca84c149ee","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPE5PMHYDPR0ATXM49PQN","",-1
+"2025-10-16 02:48:29",1760582909957,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",500,"6b889-1760582909905-17cd70f829a9","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",809,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPG0577Y7M38BXZC0TGVA","",1
+"2025-10-16 02:48:29",1760582909756,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",-1,"xjkk7-1760582907868-327f034e8cf4","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",-1,"iad1",-1,-1,"[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+ReferenceError: swaggerSpecs is not defined
+    at Object.<anonymous> (/var/task/app.js:30:55)
+    at Module.<anonymous> (/opt/rust/bytecode.js:2:1435)
+    at A.l._compile (/opt/rust/bytecode.js:2:3160)
+    at Object..js (node:internal/modules/cjs/loader:1820:10)
+    at Module.load (node:internal/modules/cjs/loader:1423:32)
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1246:12)
+    at /opt/rust/nodejs.js:2:13528
+    at Function.Vr (/opt/rust/nodejs.js:2:13906)
+    at Ue.e.<computed>.Be._load (/opt/rust/nodejs.js:2:13498)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Node.js process exited with exit status: 1. The logs above can help with debugging the issue.","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPE5PMHYDPR0ATVMPWQWD","",-1
+"2025-10-16 02:48:28",1760582908086,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",500,"z4hp7-1760582907831-57ca84c149ee","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",809,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPE5PMHYDPR0ATXM49PQN","",1
+"2025-10-16 02:48:28",1760582908086,"nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app/","GET","",500,"xjkk7-1760582907868-327f034e8cf4","vercel-screenshot/1.0","error","production","","","lambda","/app.js","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","nexum-back-qdpwmfrvj-abraao-santos-projects.vercel.app","dpl_45NaDPWnBcpqPdFB7mEssEwVPA1w",710,"iad1",129,2048,"","prj_a8xnAvsXOEKtjVAgRe4BQlUPA3ry","","","01K7NEPE5PMHYDPR0ATVMPWQWD","",1
