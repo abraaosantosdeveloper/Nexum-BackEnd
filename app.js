@@ -1,17 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-const swaggerUi = require('swagger-ui-express');
-const swaggerSpecs = require('./swagger.json'); // Import the static JSON file
+const helmet = require('helmet');
 
 const userRoutes = require('./routes/users');
 const productRoutes = require('./routes/products');
 
 const app = express();
 
-
-
-
+// Basic security headers
+app.use(helmet());
 
 // Configuração do CORS
 app.use(cors({
@@ -25,27 +23,9 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Final Swagger UI setup with CDN
-const SWAGGER_UI_VERSION = "5.17.14";
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
-    explorer: true,
-    customSiteTitle: "Nexum Supply Chain API Documentation",
-    customCssUrl: `https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/${SWAGGER_UI_VERSION}/swagger-ui.min.css`,
-    customJs: [
-        `https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/${SWAGGER_UI_VERSION}/swagger-ui-bundle.js`,
-        `https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/${SWAGGER_UI_VERSION}/swagger-ui-standalone-preset.js`
-    ],
-    swaggerOptions: {
-        displayRequestDuration: true,
-        docExpansion: 'none',
-        filter: true,
-        persistAuthorization: true,
-    }
-}));
-
-// Rota de health check
+// Root route
 app.get('/', (req, res) => {
-    res.json({ status: 'API is running' });
+    res.json({ message: 'Nexum Supply Chain API', status: 'Running' });
 });
 
 // Middleware para headers da API
@@ -70,5 +50,4 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 1433;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-    console.log(`Swagger documentation available at http://localhost:${PORT}/api-docs`);
 });
