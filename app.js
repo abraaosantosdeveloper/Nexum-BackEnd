@@ -2,62 +2,16 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const swaggerUi = require('swagger-ui-express');
-const swaggerJsdoc = require('swagger-jsdoc');
-const helmet = require('helmet'); // Import helmet
+const swaggerSpecs = require('./swagger.json'); // Import the static JSON file
 
 const userRoutes = require('./routes/users');
 const productRoutes = require('./routes/products');
 
 const app = express();
 
-// Set security headers with Helmet, configured for Swagger UI
-app.use(
-  helmet.contentSecurityPolicy({
-    directives: {
-      ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-      "script-src": ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com"],
-      "style-src": ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com"],
-    },
-  })
-);
 
-// Configuração do Swagger
-const swaggerOptions = {
-    definition: {
-        openapi: '3.0.0',
-        info: {
-            title: 'Nexum Supply Chain API',
-            version: '1.0.0',
-            description: 'API para gerenciamento da cadeia de suprimentos',
-            contact: {
-                name: 'Abraão Santos',
-                url: 'https://github.com/abraaosantosdeveloper'
-            }
-        },
-        servers: [
-            {
-                url: 'http://localhost:1433/api',
-                description: 'Development Server'
-            },
-            {
-                url: 'https://nexum-back-end.vercel.app', // Correct production URL
-                description: 'Production Server'
-            }
-        ],
-        components: {
-            securitySchemes: {
-                bearerAuth: {
-                    type: 'http',
-                    scheme: 'bearer',
-                    bearerFormat: 'JWT'
-                }
-            }
-        }
-    },
-    apis: ['./routes/*.js', './controllers/*.js']
-};
 
-const swaggerSpecs = swaggerJsdoc(swaggerOptions);
+
 
 // Configuração do CORS
 app.use(cors({
@@ -71,10 +25,16 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Simplified Swagger UI setup
+// Final Swagger UI setup with CDN
+const SWAGGER_UI_VERSION = "5.17.14";
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
     explorer: true,
     customSiteTitle: "Nexum Supply Chain API Documentation",
+    customCssUrl: `https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/${SWAGGER_UI_VERSION}/swagger-ui.min.css`,
+    customJs: [
+        `https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/${SWAGGER_UI_VERSION}/swagger-ui-bundle.js`,
+        `https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/${SWAGGER_UI_VERSION}/swagger-ui-standalone-preset.js`
+    ],
     swaggerOptions: {
         displayRequestDuration: true,
         docExpansion: 'none',
