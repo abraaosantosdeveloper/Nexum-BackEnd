@@ -33,7 +33,7 @@ app.use('/api/auth', userRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 1433;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
