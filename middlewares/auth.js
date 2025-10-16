@@ -2,6 +2,11 @@ const AuthService = require('../services/AuthService');
 
 function authMiddleware(req, res, next) {
     try {
+        // Vercel serverless: garantir que req.headers existe
+        if (!req || !req.headers) {
+            return res.status(401).json({ error: 'Requisição inválida' });
+        }
+
         const authHeader = req.headers.authorization;
 
         if (!authHeader) {

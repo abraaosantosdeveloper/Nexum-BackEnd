@@ -52,6 +52,13 @@ app.use((req, res) => {
 // Error Handler
 app.use((err, req, res, next) => {
     console.error('❌ Erro:', err);
+    
+    // Vercel serverless: garantir que req e res existem
+    if (!res || !res.status) {
+        console.error('Response object não disponível');
+        return;
+    }
+    
     res.status(err.status || 500).json({ 
         error: err.message || 'Erro interno do servidor',
         ...(process.env.NODE_ENV === 'development' && { stack: err.stack })
