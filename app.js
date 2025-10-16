@@ -3,12 +3,23 @@ const cors = require('cors');
 require('dotenv').config();
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsdoc = require('swagger-jsdoc');
-const path = require('path');
+const helmet = require('helmet'); // Import helmet
 
 const userRoutes = require('./routes/users');
 const productRoutes = require('./routes/products');
 
 const app = express();
+
+// Set security headers with Helmet, configured for Swagger UI
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+      "script-src": ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com"],
+      "style-src": ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com"],
+    },
+  })
+);
 
 // Configuração do Swagger
 const swaggerOptions = {
@@ -29,7 +40,7 @@ const swaggerOptions = {
                 description: 'Development Server'
             },
             {
-                url: '/api',
+                url: 'https://nexum-back-end.vercel.app', // Correct production URL
                 description: 'Production Server'
             }
         ],
@@ -60,21 +71,8 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Configurar tipos MIME corretos para arquivos estáticos
-app.use((req, res, next) => {
-    if (req.path.endsWith('.js')) {
-        res.setHeader('Content-Type', 'application/javascript');
-    } else if (req.path.endsWith('.css')) {
-        res.setHeader('Content-Type', 'text/css');
-    } else if (req.path.endsWith('.json')) {
-        res.setHeader('Content-Type', 'application/json');
-    }
-    next();
-});
-
-// Configuração do Swagger UI
-app.use('/api-docs', swaggerUi.serve);
-app.get('/api-docs', swaggerUi.setup(swaggerSpecs, {
+// Simplified Swagger UI setup
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
     explorer: true,
     customSiteTitle: "Nexum Supply Chain API Documentation",
     swaggerOptions: {
@@ -82,44 +80,23 @@ app.get('/api-docs', swaggerUi.setup(swaggerSpecs, {
         docExpansion: 'none',
         filter: true,
         persistAuthorization: true,
-        urls: [
-            {
-                url: '/api/swagger-spec',
-                name: 'API Spec'
-            }
-        ]
     }
 }));
 
-// Rota para servir a especificação Swagger como JSON
-app.get('/api/swagger-spec', (req, res) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    res.json(swaggerSpecs);
+// Rota de health check
+app.get('/', (req, res) => {
+    res.json({ status: 'API is running' });
 });
 
 // Middleware para headers da API
 app.use('/api', (req, res, next) => {
     res.setHeader('Content-Type', 'application/json; charset=utf-8');
     res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Accept', '*/*');
     next();
 });
 
-// Rota de health check
-app.get('/', (req, res) => {
-    res.json({ status: 'API is running' });
-});
-
-// Rotas da API com prefixo
-app.use('/api/auth', userRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/products', productRoutes);
-
-// Rota de health check
-app.get('/', (req, res) => {
-    res.json({ status: 'API is running' });
-});
-
-// Rotas da API com prefixo
+// Rotas da API
 app.use('/api/auth', userRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
