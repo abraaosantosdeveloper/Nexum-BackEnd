@@ -42,7 +42,7 @@ function authMiddleware(req, res, next) {
 
 // Middleware para verificar se o usuário é admin
 function isAdmin(req, res, next) {
-    if (req.userNivelAcesso !== 'admin') {
+    if (req.userNivelAcesso !== 'ADMIN') {
         return res.status(403).json({ error: 'Access denied: admin only' });
     }
     return next();

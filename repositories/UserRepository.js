@@ -9,14 +9,15 @@ class UserRepository {
             const hashedPassword = await bcrypt.hash(userData.senha, 10);
             
             const result = await pool.request()
+                .input('nome', sql.NVarChar, userData.nome)
                 .input('email', sql.NVarChar, userData.email)
                 .input('senha', sql.NVarChar, hashedPassword)
-                .input('matricula', sql.NVarChar, userData.matricula)
+                .input('matricula', sql.NVarChar, userData.matricula || null)
                 .input('nivel_acesso', sql.NVarChar, userData.nivel_acesso)
                 .query(`
-                    INSERT INTO supply_chain.usuarios (email, senha, matricula, nivel_acesso)
+                    INSERT INTO supply_chain.usuarios (nome, email, senha, matricula, nivel_acesso)
                     OUTPUT INSERTED.*
-                    VALUES (@email, @senha, @matricula, @nivel_acesso)
+                    VALUES (@nome, @email, @senha, @matricula, @nivel_acesso)
                 `);
 
             return new User(result.recordset[0]);

@@ -27,9 +27,10 @@ GO
 CREATE TABLE supply_chain.usuarios (
     -- Chave primária e identificação
     id INT IDENTITY(1,1) PRIMARY KEY,
+    nome NVARCHAR(255) NOT NULL,
     email NVARCHAR(255) NOT NULL UNIQUE,
     senha NVARCHAR(255) NOT NULL,
-    matricula NVARCHAR(50) NOT NULL UNIQUE,
+    matricula NVARCHAR(50) NULL,
     nivel_acesso NVARCHAR(20) NOT NULL,
     data_criacao DATETIME2 NOT NULL DEFAULT GETDATE(),
     data_atualizacao DATETIME2 NOT NULL DEFAULT GETDATE()
