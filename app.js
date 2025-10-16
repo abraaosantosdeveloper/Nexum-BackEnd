@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const swaggerUi = require('swagger-ui-express');
-const swaggerSpecs = require('./config/swagger');
+const swaggerDocument = require('./swagger.json');
 
 const userRoutes = require('./routes/users');
 const productRoutes = require('./routes/products');
@@ -25,10 +25,14 @@ app.get('/', (req, res) => {
 });
 
 // Swagger Documentation
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs, {
-    explorer: true,
-    customSiteTitle: "Nexum Supply Chain API Documentation"
-}));
+app.use('/api-docs', swaggerUi.serve);
+app.get('/api-docs', (req, res) => {
+    return res.send(
+        swaggerUi.generateHTML(swaggerDocument, {
+            customSiteTitle: "Nexum Supply Chain API Documentation"
+        })
+    );
+});
 
 // Routes with API prefix
 app.use('/api/auth', userRoutes);
